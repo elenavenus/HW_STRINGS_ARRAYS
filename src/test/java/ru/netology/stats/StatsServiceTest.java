@@ -9,7 +9,7 @@ public class StatsServiceTest {
     void testSum() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 180;
         int actual = statsService.calculateSum(testData);
@@ -20,7 +20,7 @@ public class StatsServiceTest {
     void testAverage() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 15;
         int actual = statsService.calculateAverage(testData);
@@ -31,7 +31,7 @@ public class StatsServiceTest {
     void testMin() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 9;
         int actual = statsService.minSales(testData);
@@ -42,7 +42,7 @@ public class StatsServiceTest {
     void testMax() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 8;
         int actual = statsService.maxSales(testData);
@@ -53,7 +53,7 @@ public class StatsServiceTest {
     void testMoreThanAverage() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
         int actual = statsService.moreThanAverage(testData);
@@ -64,7 +64,7 @@ public class StatsServiceTest {
     void testLessThanAverage() {
         StatsService statsService = new StatsService();
 
-        int[] testData = new int[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] testData = new long[]{8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
         int actual = statsService.lessThanAverage(testData);
